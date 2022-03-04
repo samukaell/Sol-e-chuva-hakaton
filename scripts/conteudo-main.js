@@ -1,7 +1,7 @@
 
-function htmlClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temperaturaMax,umidade, ventoVelocidade, nuvens){
+function htmlClima(){
     clima = `
-        <div class="icone"><img src="${climaIcone} alt="Icone Clima"></div>
+        <div class="icone"><img src=${climaIcone} alt="Icone Clima"></div>
         <div class="informacao">
             <li>Descrição: ${climaDescricao} </li>
             <li>Temperatura: ${temperatura} </li>
@@ -17,5 +17,5 @@ function htmlClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temper
 }
 function carregarDadosClima(){
     const conteudo = document.querySelector(".conteudo");
-    conteudo.innerHTML = componenteClima();
+    conteudo.innerHTML = htmlClima();
 }

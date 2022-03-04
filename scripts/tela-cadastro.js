@@ -7,7 +7,7 @@ tela.querySelector("form").addEventListener("submit", event =>{
     //AQUI!
     // receberClimaInput();
     informacaoClima();
-    htmlClima();
+    htmlClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temperaturaMax,umidade, ventoVelocidade, nuvens);
     carregarDadosClima();
 });
 
