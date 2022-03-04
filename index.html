@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./estilos/reset.css">
     <link rel="stylesheet" href="./estilos/estilo-header.css">
     <link rel="stylesheet" href="./estilos/estilo-main.css">
+    <link rel="stylesheet" href="./estilos/estilo-responsivo.css">
+    <link rel="stylesheet" href="./estilos/estilos-tela-cadastro.css">
     
 
     <!--FONTS-->
@@ -17,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <p class="logo">SOL e CHUVA</p>
@@ -31,5 +34,21 @@
         <button class="botao">Recarregar</button>
     </main>
     
+    <!--TELA DE CADASTRO-->
+    <div class="tela-cadastro">
+        <form action="">
+            <p class="titulo">Qual a cidade</p>
+            <input type="text" placeholder="Recife" required>
+            <button type="submit">Confirmar</button>
+        </form>
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/geolocation.js"></script>
+    <script src="./scripts/openweathermap.js"></script>
+    <script src="./scripts/dados.js"></script>
+    <script src="./scripts/tela-cadastro.js"></script>
+    <script src="./scripts/conteudo-main.js"></script>
 </body>
 </html>

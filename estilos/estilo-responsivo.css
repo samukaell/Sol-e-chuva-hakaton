@@ -1,0 +1,62 @@
+@media (min-width: 935px){
+    main .icone{
+        margin-right: 30px;
+    }
+    .tela-cadastro{
+       width: 100%;
+        left: 25%;
+    }
+}
+@media (max-width: 935px){
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    main .conteudo{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    main .conteudo .icone{
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    main .conteudo .informacao{
+        width: 100%;
+    }
+    .tela-cadastro{
+        left: 0;
+        width: 100%;
+
+    }
+    
+}
+@media (max-width: 500px){
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    header .logo{
+        font-size: 30px;
+        width: 100%;
+    }
+    main .conteudo{
+        display: flex;
+        align-items: center;
+    }
+    main .conteudo .icone{
+        width: 100%;
+    }
+    main .conteudo .informacao{
+        width: 100%;
+    }
+
+    main .conteudo .botao{
+        width: 100%;
+    }
+
+    body{
+        padding-bottom: 20px;
+    }
+}
