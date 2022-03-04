@@ -1,7 +1,9 @@
 let latitudeGeolocation = null;
 let longitudeGeolocation = null;
+let isErroGeolocation = true;
 
-if ("geolocation" in navigator) {
+function chamaGeolocalizacao() {
+  if ("geolocation" in navigator) {
     console.log("Suporta Geolocalização!");
 } else {
     alert("Navegador não suporta Geolocalização!");
@@ -11,11 +13,13 @@ if ("geolocation" in navigator) {
     latitudeGeolocation = position.coords.latitude;
     longitudeGeolocation = position.coords.longitude;
     console.log(position.coords.latitude, position.coords.longitude);
-    // console.log(position.address);
+    isErroGeolocation = false;
     segueCodigoComGeolocalizacao();
   },showError);
-
+  
+}
   function showError(error) {
+    receberClimaInput();
     switch(error.code) {
       case error.PERMISSION_DENIED:
         console.log("User denied the request for Geolocation.");
@@ -35,5 +39,6 @@ if ("geolocation" in navigator) {
 function segueCodigoComGeolocalizacao(){
   console.log(latiudeGeolocation);
   console.log(longitudeGeolocation);
+  receberClimaNavegador();
 }
 

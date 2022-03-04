@@ -13,7 +13,7 @@ umidade;
 */
 
 
-function componenteClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temperaturaMax,umidade, ventoVelocidade, nuvens){
+function htmlClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temperaturaMax,umidade, ventoVelocidade, nuvens){
     clima = `
         <div class="icone"><img src="${climaIcone} alt="Icone Clima"></div>
         <div class="informacao">

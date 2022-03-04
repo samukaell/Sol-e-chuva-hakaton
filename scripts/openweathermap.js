@@ -22,13 +22,14 @@ function receberClimaNavegador(){
         .then(resposta => { 
             dadosOpenweather = resposta.data;
             console.log(dadosOpenweather);
+            desabilitarTelaCadastro();
         })
         .catch(()=>{
             alert("Localização inválida")
         });  
 }
 
-function receberClima(){
+function receberClimaInput(){
     let cidade = document.querySelector('.tela-cadastro input').value
     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&lang=pt_br&units=metric&appid=${chaveApi}`
     console.log(apiUrl);
@@ -54,3 +55,5 @@ function informacaoClima(){
     temperaturaMax = `${dadosOpenweather.main.temp_max}°C`;
     temperaturaMin = `${dadosOpenweather.main.temp_min}°C`;
 }
+
+

@@ -1,9 +1,12 @@
 @media (min-width: 935px){
+    header .logo{
+        margin-left: 10px;
+    }
     main .icone{
         margin-right: 30px;
     }
     .tela-cadastro{
-       width: 100%;
+        width: 100%;
         left: 25%;
     }
 }
