@@ -2,6 +2,8 @@ let latitudeGeolocation = null;
 let longitudeGeolocation = null;
 let isErroGeolocation = true;
 
+chamaGeolocalizacao();
+
 function chamaGeolocalizacao() {
   if ("geolocation" in navigator) {
     console.log("Suporta Geolocalização!");
@@ -37,8 +39,6 @@ function chamaGeolocalizacao() {
   }
 
 function segueCodigoComGeolocalizacao(){
-  console.log(latiudeGeolocation);
-  console.log(longitudeGeolocation);
   receberClimaNavegador();
 }
 

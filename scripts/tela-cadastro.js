@@ -6,7 +6,6 @@ tela.querySelector("form").addEventListener("submit", event =>{
     
     //AQUI!
     // receberClimaInput();
-    chamaGeolocalizacao();
     informacaoClima();
     htmlClima();
     carregarDadosClima();

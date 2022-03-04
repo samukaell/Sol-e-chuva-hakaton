@@ -1,17 +1,3 @@
-/*
-temperatura;
-temperaturaMin;
-temperaturaMax;
-
-nuvens;
-ventoVelocidade;
-ventoAngulo;
-
-climaDescricao;
-climaIcone;
-umidade;
-*/
-
 
 function htmlClima(climaIcone,climaDescricao, temperatura,temperaturaMin, temperaturaMax,umidade, ventoVelocidade, nuvens){
     clima = `
